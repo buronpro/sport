@@ -29,63 +29,82 @@ img {
 	width: 1340px;
 	margin: 0 auto;
 	padding: 0 20px  ;
+
+}
+
+.heading {
+	align-items: center;
+	transform: translateX(40%);
+	padding-top: 20px;
+	margin: 0 auto;
 }
 
 .form {
-	width: 100px;
-	margin: 0 ;
-	padding-top: 20px;
- }
- 
-.label__info {
+width: 100px;
+margin: 0 auto;
+padding-top: 25px;
+}
+
+.form__label {
 	display: flex;
 	align-items: center;
-	margin-bottom: 20px;
+	margin: 0 auto;
+	margin-bottom: 25px;
 }
 
 .input__controller {
-	width: 20px;
-	height: 20px;
+	width: 30px;
+	height: 30px;
 	display: inline-block;
-	margin-right: auto;
-	border: 1px solid dimgrey;
+	margin-left: 20;
+	border: 1px solid dimgray;
+	cursor: pointer;
 }
 
 .input__info:checked + .input-tennis {
-	background-image: url(../ikonkalar/table-tennis.png);
+	background-image: url("../ikonkalar/table-tennis.png");
 	background-size: 80%;
 	background-position: center;
 	background-repeat: no-repeat;
 }
 
-.input__info:checked + .input-basketboll{
-	background-image: url(../ikonkalar/basketball-ball.png);
+.input__info:checked + .input-basketbol {
+	background-image: url("../ikonkalar/basketball-ball.png");
 	background-size: 80%;
 	background-position: center;
 	background-repeat: no-repeat;
 }
 
-.input__info:checked + .input-voleybol{
-	background-image: url(../ikonkalar/volleyball-ball.png);
+
+.input__info:checked + .input-voleybol {
+	background-image: url("../ikonkalar/volleyball-ball.png");
 	background-size: 80%;
 	background-position: center;
 	background-repeat: no-repeat;
 }
 
-.input__info:checked + .input-hokey{
-	background-image: url(../ikonkalar/hockey-puck.png);
+.input__info:checked + .input-hokkey {
+	background-image: url("../ikonkalar/hockey-puck.png");
 	background-size: 80%;
 	background-position: center;
 	background-repeat: no-repeat;
 }
 
-.input__info:checked + .input-hokey {
-	background-color: dimgrey;
-	opacity: 0.5;
+
+.inbut__info:disabled +.input__color {
+    color:dimgray;
+	opacity: 0.5px;
 }
 
-.input__subimt {
+
+
+.input__info:focus + .input__controller {
+	box-shadow: 0px 3px 8px 0px rgba(99, 99, 99, 0.5);
+}
+
+.sublist-button {
 	display: block;
+	margin: 0 auto;
 	padding: 10px;
-	cursor: pointer;
+	border-radius: 6px;
 }
